@@ -1,0 +1,37 @@
+{
+  "schema": "eav.live_interaction.detected_av_devices.v1",
+  "generated_utc": "2026-09-27T10:29:03.874395+00:00",
+  "probe_version": "EAV-LIVE-AV-DEVICE-PROBE.1.1",
+  "window_seconds": 5.0,
+  "clock": {
+    "source": "time.monotonic()",
+    "clock_id_recommendation": "python_time_monotonic_same_host"
+  },
+  "camera": {
+    "index": 0,
+    "backend": "DSHOW",
+    "reported_width": 1280,
+    "reported_height": 720,
+    "reported_fps": 30.00003000003,
+    "measured_fps": 20.178476292029085,
+    "requested_width": 1280,
+    "requested_height": 720,
+    "requested_fps": 30.0,
+    "requested_fourcc": null
+  },
+  "audio": {
+    "device_index": 1,
+    "device_name": "Microphone Array (Realtek(R) Au",
+    "hostapi_name": "MME",
+    "capture_samplerate": 16000.0,
+    "channels": 1,
+    "dtype": "float32",
+    "model_target_samplerate": 16000,
+    "resample_required": false
+  },
+  "eeg": {
+    "present": false,
+    "reason": "EEG_DEVICE_NOT_CONNECTED"
+  },
+  "probe_status": "PASS_WITH_WARNINGS"
+}

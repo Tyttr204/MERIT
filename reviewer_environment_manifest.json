@@ -1,0 +1,22 @@
+{
+  "schema": "merit.reviewer.environment.v1",
+  "generator": "MERIT-REVIEWER-ENV-EXPORT.1.0",
+  "validated_python": {
+    "major": 3,
+    "minor": 11,
+    "patch": 9
+  },
+  "validated_torch_family": {
+    "torch": "2.7.1+cu128",
+    "torchvision": "0.22.1+cu128",
+    "torchaudio": "2.7.1+cu128"
+  },
+  "validated_cuda_build": "12.8",
+  "validated_cuda_available": true,
+  "requirements_file": "requirements-reviewer.txt",
+  "requirements_sha256": "b3bef88c88a4d4f17ed22e7fd805ac1a7a50e31b040701a8f18f1e5f8c68bd45",
+  "pinned_non_torch_distribution_count": 94,
+  "runtime_probe_status": "PASS",
+  "local_paths_recorded": false,
+  "note": "This manifest records the validated dependency versions without machine-specific paths. PyTorch wheels are selected by bootstrap_reviewer.py."
+}

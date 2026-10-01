@@ -1,0 +1,265 @@
+{
+  "schema": "eav.quality_layer.release_candidate.v1",
+  "version": "EAV-AUDIO-QUALITY-V2-EVALUATION.2.1",
+  "release_state": "FROZEN_CANDIDATE_PENDING_FIXED_VALIDATION",
+  "variant": "KEEP_V1",
+  "policy": null,
+  "policy_sha256": null,
+  "designation": "KEEP_V1 has no new fitted params; otherwise predeclared fold 0, NOT best fold",
+  "frozen_dependency_identity": {
+    "adapter_version": "EAV-QUALITY-FUSION-ADAPTER.1.1",
+    "adapter_script_sha256": "878fe610877dc8c3a1e5431b4ffb9c5db4db65cf983493a03c327dfe6bf437b8",
+    "controller_script_sha256": "7feead21763a4f0b7e3c05ae1fda3d1d7bca200a97d67208ba23dcd6dac28e72",
+    "scorer": {
+      "runtime_version": "EAV-DISTRIBUTION-QUALITY-RUNTIME.1.0",
+      "bundle_schema": "eav.distribution_quality_policy.bundle.v1",
+      "runtime_script_sha256": "23dd2d8074ce2adb548e3c8d71ac0ee2fb92b6cb88d24337aae600d2607c1d28",
+      "python_version": "3.11.9",
+      "numeric_backend": "stdlib NormalDist; binary64",
+      "bundle_path": "<REPO_ROOT>\\Quality\\distribution_quality_params.json",
+      "bundle_bytes": 46809,
+      "bundle_sha256": "b9fd67533622c0de733ec7e5c0f4b5a80cb9819b74b07f57700b623c5a79d503",
+      "bundle_sha256_verified": true,
+      "bundle_pin_source": "reviewed_bundle_pin",
+      "policy_fingerprint_sha256": "b085e33d4e1fb6c02c637b3c36a3530353e773299d30cea007f7a5e119c3f8b4",
+      "exporter_policy_fingerprint_recomputed": false,
+      "fingerprint_note": "Exporter fingerprint is a label; integrity verified by pinned file bytes.",
+      "sidecars_verified": [],
+      "artifact_state": "EXPORTED_CANDIDATE_NOT_DEPLOYABLE",
+      "created_utc": "2026-09-26T10:17:09.155064+00:00",
+      "reference_scope": "full_6_VAL_subjects_clean_5s_windows",
+      "reference_windows_per_feature": 120,
+      "production_approved": false,
+      "live_robot_control_authorized": false
+    },
+    "policy_sha256": "a75f43a6a3589247af565e457b6be89441cfaa5ba57e1228a3857bec7a46f088",
+    "fusion_backend_loaded": true,
+    "fusion_backend": {
+      "f4": {
+        "file": "<REPO_ROOT>\\Fusion\\best_validation_selected.pt",
+        "sha256": "3baee8225f871591f1f28da39717553c8d7a2fcc879dcd6de9297d485629d3d1",
+        "bytes": 5973,
+        "stage": "F4",
+        "candidate": "mlp_stacker",
+        "epoch": 72,
+        "seed": 20262914
+      },
+      "af4b": {
+        "file": "<REPO_ROOT>\\Fusion\\best_validation_robustness.pt",
+        "sha256": "de1056dd1a2e31778443a47cc8229911ce573f5be3d63886d10d22382dfb088b",
+        "bytes": 10815,
+        "stage": "AF4-B",
+        "candidate": "af4b_qbeta_200",
+        "epoch": 119,
+        "seed": 20290915
+      },
+      "embedded_f4_exact_match": true,
+      "embedded_f4_tensors_compared": 6,
+      "f4_parameters": 707,
+      "af4b_parameters_including_f4": 1448,
+      "source_fusion_sha256": "ba4a1b315a415c5236b38150f0603ad1a0b62d0515bf9790033b6fb304758fd6",
+      "runtime_script_sha256": "fcdf5e3bdc3b1a09fa775e9065781f5f313a5da18b05ef07fcff2808b063a323",
+      "torch": "2.7.1+cu128",
+      "numpy": "1.26.4",
+      "device": "cpu",
+      "checkpoint_training_input": "trial-level concatenated probabilities [EEG5,Audio5,Video5]",
+      "weights_only": true,
+      "training_performed": false,
+      "benchmark_arrays_read": false,
+      "backend_kind": "REVIEWED_FROZEN_CORE",
+      "real_checkpoint_loaded": true,
+      "fusion_script": "<REPO_ROOT>\\Fusion\\融合层部署模块.py",
+      "fusion_script_byte_pin_verified": true,
+      "numeric_core_AST_pin_verified": true,
+      "numeric_core_AST_sha256": "456daaf543201c7411340c6cd1d4002b69dd2fbae3a6610de673bf1e09874fe8",
+      "numeric_core_AST_format": "eav.fusion_core.structural_ast.v1",
+      "system_config_sha256": null,
+      "manifest_verified": false,
+      "old_router_executed": false,
+      "old_quality_calibrators_loaded": false,
+      "old_q_used": false,
+      "new_quality_mapping_compatibility_proven": false,
+      "source_text_warning": "Local Python source is trusted code, not sandboxed by AST/hash checks."
+    }
+  },
+  "source_hashes": {
+    "run_summary": "4ea9c35b893bce50730fc9772a26c5bc3bf502c0868f7308bfb15127ae3acac5",
+    "windows_jsonl_or_zip": "e52e48a46bcfa7756b13a6cc4ff404e68d0bca6f645504fa02235d8a8a3d7133"
+  },
+  "protocol": {
+    "schema": "eav.audio_quality_v2_1.closeout.v1.protocol",
+    "version": "EAV-AUDIO-QUALITY-V2-EVALUATION.2.1",
+    "split_seed": 20260927,
+    "audio_alpha": 0.05,
+    "channel_alarm_budget_allocation": {
+      "perceptual": 0.5,
+      "low_level": 0.5
+    },
+    "beta_grid_per_channel": [
+      0.125,
+      0.5,
+      2.0
+    ],
+    "n_mapping_candidates": 9,
+    "max_clean_window_drop": 0.0,
+    "max_clean_trial_drop": 0.0,
+    "protected_conditions": [
+      "clean",
+      "audio-attenuation-18db",
+      "audio-white-noise-10db",
+      "eeg-line-50hz",
+      "video-blur"
+    ],
+    "other_condition_accuracy_drop_tolerance": 0.0,
+    "all_condition_macro_f1_drop_tolerance": 0.0,
+    "coverage_drop_tolerance": 0.0,
+    "mapping_objective": "FIT guards per condition, both AF4 and fixed V1 routing; feasible first, least violation, Audio window gain, Audio trial gain, Audio F1, overall gain, NLL, weaker beta",
+    "reference": "FIT clean median/IQR, no new tail probability or population-normality claim",
+    "alert": "two separate rank n-floor(n*alpha/2) thresholds on CAL clean; strict >; union empirical budget only",
+    "mapping": "unchanged nine beta pairs; min(exp(-beta*d^2)); threshold-independent",
+    "split": "seeded subject-cycle, 3+ FIT / 2 CAL / 1 EVAL; every trial and all conditions grouped",
+    "candidate_export": "predeclared fold 0 parameters; NEVER best-fold selection or pooled-score attribution",
+    "stopping_rule": "after this bounded candidate grid, choose KEEP_V1 / AUDIO_Q_ONLY / AUDIO_Q_AND_ALERT then fixed validation; no automatic additional search",
+    "variant_tie_rule": "prefer Q_ONLY when both eligible unless FULL dominates Q_ONLY window/trial accuracy and F1 per condition with a strict Audio accuracy gain",
+    "existing_v1_eeg_video_references_are_frozen": true,
+    "runtime_predictors": [
+      "dnsmos.OVRL_raw",
+      "signal_metrics.rms_dbfs"
+    ],
+    "fit_uses_emotion_labels": true,
+    "calibration_uses_emotion_labels": false,
+    "runtime_uses_labels_or_corruption": false
+  },
+  "known_development_base_trial_ids": [
+    [
+      "subject08",
+      "subject08_instance014"
+    ],
+    [
+      "subject08",
+      "subject08_instance022"
+    ],
+    [
+      "subject08",
+      "subject08_instance038"
+    ],
+    [
+      "subject08",
+      "subject08_instance180"
+    ],
+    [
+      "subject08",
+      "subject08_instance198"
+    ],
+    [
+      "subject09",
+      "subject09_instance026"
+    ],
+    [
+      "subject09",
+      "subject09_instance076"
+    ],
+    [
+      "subject09",
+      "subject09_instance162"
+    ],
+    [
+      "subject09",
+      "subject09_instance188"
+    ],
+    [
+      "subject09",
+      "subject09_instance196"
+    ],
+    [
+      "subject10",
+      "subject10_instance028"
+    ],
+    [
+      "subject10",
+      "subject10_instance058"
+    ],
+    [
+      "subject10",
+      "subject10_instance076"
+    ],
+    [
+      "subject10",
+      "subject10_instance152"
+    ],
+    [
+      "subject10",
+      "subject10_instance186"
+    ],
+    [
+      "subject13",
+      "subject13_instance010"
+    ],
+    [
+      "subject13",
+      "subject13_instance088"
+    ],
+    [
+      "subject13",
+      "subject13_instance106"
+    ],
+    [
+      "subject13",
+      "subject13_instance112"
+    ],
+    [
+      "subject13",
+      "subject13_instance128"
+    ],
+    [
+      "subject14",
+      "subject14_instance048"
+    ],
+    [
+      "subject14",
+      "subject14_instance072"
+    ],
+    [
+      "subject14",
+      "subject14_instance146"
+    ],
+    [
+      "subject14",
+      "subject14_instance156"
+    ],
+    [
+      "subject14",
+      "subject14_instance190"
+    ],
+    [
+      "subject33",
+      "subject33_instance008"
+    ],
+    [
+      "subject33",
+      "subject33_instance026"
+    ],
+    [
+      "subject33",
+      "subject33_instance108"
+    ],
+    [
+      "subject33",
+      "subject33_instance122"
+    ],
+    [
+      "subject33",
+      "subject33_instance124"
+    ]
+  ],
+  "forbidden_frozen_evaluation_scope": "ALL these development trials, including prior OOF evaluation, across ALL conditions",
+  "broader_historical_data_exposure_not_exhaustively_known": true,
+  "crossfit_scores_are_not_fixed_policy_scores": true,
+  "development_selection_uses_oof_screen": true,
+  "structural_search_closed": true,
+  "parameters_may_not_change_in_frozen_evaluation": true,
+  "production_approved": false,
+  "main_integrated": false,
+  "robot_actions_authorized": false,
+  "release_sha256": "516740caea3c8a672989d1e02a3179d5ef1ab9e9df394d6c27ddb42c42e4c098"
+}

@@ -1,0 +1,55 @@
+{
+  "split": "train",
+  "embedding_shape": [
+    12000,
+    1024
+  ],
+  "score_shape": [
+    12000,
+    9
+  ],
+  "source_manifest": "<PROJECT_ROOT>\\EAV_dataset\\processed\\audio_a0_speaking_16k_20260907_213919\\train_audio_window_manifest.csv",
+  "source_manifest_sha256": "444efa9751e51fc7de9d7c5db45984f927769631b2ea4047ae9a7c17467d7158",
+  "model": {
+    "funasr_version": "1.4.14",
+    "model_id": "iic/emotion2vec_plus_large",
+    "hub": "ms",
+    "device": "cuda:0",
+    "model_path": "<USER_HOME>\\.cache\\modelscope\\models\\iic--emotion2vec_plus_large\\snapshots\\master",
+    "total_params": 164048921,
+    "trainable_params": 0,
+    "expected_embedding_dim": 1024,
+    "expected_score_dim": 9,
+    "preflight": {
+      "embedding_dim": 1024,
+      "embedding_norm": 11.253776550292969,
+      "score_dim": 9,
+      "score_sum": 1.0,
+      "score_labels": [
+        "生气/angry",
+        "厌恶/disgusted",
+        "恐惧/fearful",
+        "开心/happy",
+        "中立/neutral",
+        "其他/other",
+        "难过/sad",
+        "吃惊/surprised",
+        "<unk>"
+      ],
+      "elapsed_sec": 0.2772819995880127
+    }
+  },
+  "official_score_labels": [
+    "生气/angry",
+    "厌恶/disgusted",
+    "恐惧/fearful",
+    "开心/happy",
+    "中立/neutral",
+    "其他/other",
+    "难过/sad",
+    "吃惊/surprised",
+    "<unk>"
+  ],
+  "granularity": "utterance",
+  "extract_embedding": true
+}

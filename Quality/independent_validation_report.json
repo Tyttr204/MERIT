@@ -1,0 +1,140 @@
+{
+  "status": "PASS",
+  "real_bundle_sha256": "5e66480adb6d413582d7008b8d45ba621d6b1f8f716a48e0bed77cb112cfce7e",
+  "feature_evidence_comparisons": 11405,
+  "max_feature_absolute_error": 6.661338147750939e-16,
+  "full_window_synthetic_parity": {
+    "status": "PASS",
+    "cases": 240,
+    "comparisons": 5040,
+    "mismatches": [],
+    "absolute_tolerance": 1e-10,
+    "relative_tolerance": 1e-09,
+    "boolean_route_comparison": "exact; no threshold epsilon",
+    "expected_results_origin": "Independent NumPy boolean counts + scipy.stats.norm.isf; synthetic cases only",
+    "reference_scope": "full_6_VAL_subjects_clean_5s_windows",
+    "identity": {
+      "runtime_version": "EAV-DISTRIBUTION-QUALITY-RUNTIME.1.0",
+      "bundle_schema": "eav.distribution_quality_policy.bundle.v1",
+      "runtime_script_sha256": "a74ed9829f928c797c96e6089747438975d74227e3a3c551cfb3cd9853dde1eb",
+      "python_version": "3.13.5",
+      "numeric_backend": "stdlib NormalDist; binary64",
+      "bundle_path": "/mnt/data/reference/distribution_quality_params.json",
+      "bundle_bytes": 46809,
+      "bundle_sha256": "5e66480adb6d413582d7008b8d45ba621d6b1f8f716a48e0bed77cb112cfce7e",
+      "bundle_sha256_verified": true,
+      "bundle_pin_source": "reviewed_bundle_pin",
+      "policy_fingerprint_sha256": "b085e33d4e1fb6c02c637b3c36a3530353e773299d30cea007f7a5e119c3f8b4",
+      "exporter_policy_fingerprint_recomputed": false,
+      "fingerprint_note": "Exporter fingerprint is a label; integrity verified by pinned file bytes.",
+      "sidecars_verified": [],
+      "artifact_state": "EXPORTED_CANDIDATE_NOT_DEPLOYABLE",
+      "created_utc": "2026-09-26T10:17:09.155064+00:00",
+      "reference_scope": "full_6_VAL_subjects_clean_5s_windows",
+      "reference_windows_per_feature": 120,
+      "production_approved": false,
+      "live_robot_control_authorized": false
+    },
+    "threshold_transfer_validated": false,
+    "production_approved": false
+  },
+  "feature_probes": [
+    {
+      "modality": "eeg",
+      "feature": "features.hf55_90_fraction_mean",
+      "comparisons": 862
+    },
+    {
+      "modality": "eeg",
+      "feature": "features.line_fraction_mean",
+      "comparisons": 1503
+    },
+    {
+      "modality": "eeg",
+      "feature": "features.pyprep_bad_fraction",
+      "comparisons": 862
+    },
+    {
+      "modality": "eeg",
+      "feature": "features.raw_flat_channel_fraction",
+      "comparisons": 862
+    },
+    {
+      "modality": "eeg",
+      "feature": "features.raw_hold_fraction_mean",
+      "comparisons": 862
+    },
+    {
+      "modality": "eeg",
+      "feature": "features.rms_uv_median",
+      "comparisons": 862
+    },
+    {
+      "modality": "eeg",
+      "feature": "features.slow02_1_fraction_mean",
+      "comparisons": 862
+    },
+    {
+      "modality": "audio",
+      "feature": "dnsmos.OVRL_raw",
+      "comparisons": 862
+    },
+    {
+      "modality": "audio",
+      "feature": "signal_metrics.rms_dbfs",
+      "comparisons": 1503
+    },
+    {
+      "modality": "video",
+      "feature": "face_observability.raw_detection_rate",
+      "comparisons": 862
+    },
+    {
+      "modality": "video",
+      "feature": "physical_quality.technical_raw",
+      "comparisons": 1503
+    }
+  ],
+  "numpy_scalar_tests": [
+    {
+      "type": "<class 'numpy.float64'>",
+      "accepted": true,
+      "status": "PASS"
+    },
+    {
+      "type": "<class 'numpy.float32'>",
+      "accepted": true,
+      "status": "PASS"
+    },
+    {
+      "type": "<class 'numpy.int64'>",
+      "accepted": true,
+      "status": "PASS"
+    },
+    {
+      "type": "<class 'numpy.bool'>",
+      "accepted": false,
+      "status": "PASS"
+    },
+    {
+      "type": "<class 'numpy.ndarray'>",
+      "accepted": false,
+      "status": "PASS"
+    },
+    {
+      "type": "<class 'numpy.ndarray'>",
+      "accepted": false,
+      "status": "PASS"
+    }
+  ],
+  "real_sensor_data_used": false,
+  "original_offline_builder_replayed": false,
+  "source_provenance_files_verified_in_this_environment": false,
+  "threshold_transfer_validated": false,
+  "accuracy_tested": false,
+  "runtime_dependencies": "Python standard library only",
+  "validation_dependencies": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "runner_version": "EAV-SYSTEM-TEST.1.0",
+  "runner_sha256": "9b05a0a09f0aeab1758d6e3d22decbd554fff683050d32eab2b5daff1d2e54ab",
+  "regression_tests": 39,
+  "regression_failures": 0,
+  "regression_errors": 0,
+  "regression_skips": 0,
+  "self_test_checks": 38,
+  "fusion_contract_checks": 49,
+  "original_fusion_preflight_checks": 52,
+  "full_case_pipeline_check": {
+    "conditions": 54,
+    "raw_media": "synthetic EEG/WAV/video",
+    "main_source_readers_used": true,
+    "main_Runtime_process_used": true,
+    "emotion_quality_models": "test doubles",
+    "fusion": "real user frozen F4/AF4-B"
+  },
+  "real_EAV_end_to_end_executed": false,
+  "Windows_executed": false,
+  "CUDA_executed": false,
+  "hardware_executed": false,
+  "accuracy_claimed": false,
+  "two_intermediate_failures": "test harness replaced its own Runtime class reference; corrected the harness, final regression is PASS"
+}

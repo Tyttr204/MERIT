@@ -1,0 +1,137 @@
+{
+  "schema": "merit.github_release_assets.v2",
+  "generated_utc": "2026-10-01T11:33:52.797747+00:00",
+  "repository": "Tyttr204/MERIT",
+  "release_tag": "review-v1.0.0",
+  "release_base_url": "https://github.com/Tyttr204/MERIT/releases/download/review-v1.0.0",
+  "asset_count": 15,
+  "assets": [
+    {
+      "path": "Audio/Audio头.pt",
+      "release_name": "audio-head.pt",
+      "size_bytes": 1075413,
+      "sha256": "c360da9c3e9f1d52d137f0045b56116441c12289688ab3f1547e0545940cef0e",
+      "git_role": "release_asset",
+      "download_url": "https://github.com/Tyttr204/MERIT/releases/download/review-v1.0.0/audio-head.pt"
+    },
+    {
+      "path": "Audio/emotion2vec_plus_large/model.pt",
+      "release_name": "audio-emotion2vec-plus-large-model.pt",
+      "size_bytes": 1945790254,
+      "sha256": "be501a01f26fcdc7663a062dff86af839afbaef7c4de32f5e42d7e1ad2784da4",
+      "git_role": "release_asset",
+      "download_url": "https://github.com/Tyttr204/MERIT/releases/download/review-v1.0.0/audio-emotion2vec-plus-large-model.pt"
+    },
+    {
+      "path": "Audio/sig_bak_ovr.onnx",
+      "release_name": "audio-dnsmos-sig-bak-ovr.onnx",
+      "size_bytes": 1157965,
+      "sha256": "269fbebdb513aa23cddfbb593542ecc540284a91849ac50516870e1ac78f6edd",
+      "git_role": "release_asset",
+      "download_url": "https://github.com/Tyttr204/MERIT/releases/download/review-v1.0.0/audio-dnsmos-sig-bak-ovr.onnx"
+    },
+    {
+      "path": "EEG/EEG头.pt",
+      "release_name": "eeg-head.pt",
+      "size_bytes": 130079,
+      "sha256": "994c48f58347819df699006631b5cbb29f8f79dcbb9bacfbb96a789b9ad97d38",
+      "git_role": "release_asset",
+      "download_url": "https://github.com/Tyttr204/MERIT/releases/download/review-v1.0.0/eeg-head.pt"
+    },
+    {
+      "path": "Fusion/best_validation_robustness.pt",
+      "release_name": "fusion-degradation-aware.pt",
+      "size_bytes": 10815,
+      "sha256": "de1056dd1a2e31778443a47cc8229911ce573f5be3d63886d10d22382dfb088b",
+      "git_role": "release_asset",
+      "download_url": "https://github.com/Tyttr204/MERIT/releases/download/review-v1.0.0/fusion-degradation-aware.pt"
+    },
+    {
+      "path": "Fusion/best_validation_selected.pt",
+      "release_name": "fusion-standard.pt",
+      "size_bytes": 5973,
+      "sha256": "3baee8225f871591f1f28da39717553c8d7a2fcc879dcd6de9297d485629d3d1",
+      "git_role": "release_asset",
+      "download_url": "https://github.com/Tyttr204/MERIT/releases/download/review-v1.0.0/fusion-standard.pt"
+    },
+    {
+      "path": "MERIT-Offline Model/testing Data/subject1/EEG/subject1_eeg.mat",
+      "release_name": "offline-subject01-eeg.mat",
+      "size_bytes": 453550283,
+      "sha256": "6a50742bb7dd6d2639f818cbe6a044d12a346ddfb9d9a212f015851210ce7bc7",
+      "git_role": "release_asset",
+      "download_url": "https://github.com/Tyttr204/MERIT/releases/download/review-v1.0.0/offline-subject01-eeg.mat"
+    },
+    {
+      "path": "MERIT-Offline Model/testing Data/subject4/EEG/subject4_eeg.mat",
+      "release_name": "offline-subject04-eeg.mat",
+      "size_bytes": 454845285,
+      "sha256": "80e6e346435a27891f263eb1605e1525c1fb9324b9e237997333250a1979cfe2",
+      "git_role": "release_asset",
+      "download_url": "https://github.com/Tyttr204/MERIT/releases/download/review-v1.0.0/offline-subject04-eeg.mat"
+    },
+    {
+      "path": "MERIT-Offline Model/testing Data/subject14/EEG/subject14_eeg.mat",
+      "release_name": "offline-subject14-eeg.mat",
+      "size_bytes": 454777735,
+      "sha256": "6389956942fe1ad4bf4d13dd2e9d7467cacadf1f79902bff614b293f8c9e67f6",
+      "git_role": "release_asset",
+      "download_url": "https://github.com/Tyttr204/MERIT/releases/download/review-v1.0.0/offline-subject14-eeg.mat"
+    },
+    {
+      "path": "MERIT-Offline Model/testing Data/subject31/EEG/subject31_eeg.mat",
+      "release_name": "offline-subject31-eeg.mat",
+      "size_bytes": 455325310,
+      "sha256": "d8d4b324b3c0f369bcf605374c42d3a845a51c73f4b6d3f48c9b1c6a9ffa4d34",
+      "git_role": "release_asset",
+      "download_url": "https://github.com/Tyttr204/MERIT/releases/download/review-v1.0.0/offline-subject31-eeg.mat"
+    },
+    {
+      "path": "Video/DFEW-set1-model.pth",
+      "release_name": "video-dfew-set1-model.pth",
+      "size_bytes": 614854176,
+      "sha256": "f8107cc439e5e924ea566f92905dd5ba05a0eaefdb449ae8f9dadd1eb519a385",
+      "git_role": "release_asset",
+      "download_url": "https://github.com/Tyttr204/MERIT/releases/download/review-v1.0.0/video-dfew-set1-model.pth"
+    },
+    {
+      "path": "Video/DOVER_official/pretrained_weights/DOVER.pth",
+      "release_name": "video-dover.pth",
+      "size_bytes": 239729097,
+      "sha256": "f4a42c0bbc94c94dd7409e7f40887d44c5c30314d1d09e7edf03cc35813b4838",
+      "git_role": "release_asset",
+      "download_url": "https://github.com/Tyttr204/MERIT/releases/download/review-v1.0.0/video-dover.pth"
+    },
+    {
+      "path": "Video/VIDEO头.pt",
+      "release_name": "video-head.pt",
+      "size_bytes": 537621,
+      "sha256": "6a10b85c033b66b3f6655adb333d2d24cbc55df261b36e75588de0c817e46aa7",
+      "git_role": "release_asset",
+      "download_url": "https://github.com/Tyttr204/MERIT/releases/download/review-v1.0.0/video-head.pt"
+    },
+    {
+      "path": "Video/face_detection_yunet_2023mar.onnx",
+      "release_name": "video-yunet-face-detection.onnx",
+      "size_bytes": 232589,
+      "sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+      "git_role": "release_asset",
+      "download_url": "https://github.com/Tyttr204/MERIT/releases/download/review-v1.0.0/video-yunet-face-detection.onnx"
+    },
+    {
+      "path": "Video/video_quality_calibrator.joblib",
+      "release_name": "video-quality-calibrator.joblib",
+      "size_bytes": 2916,
+      "sha256": "6bf31d8405efa474a423365bb5604685bdf0ff36e313814bd097344572ecde0e",
+      "git_role": "release_asset",
+      "download_url": "https://github.com/Tyttr204/MERIT/releases/download/review-v1.0.0/video-quality-calibrator.joblib"
+    }
+  ],
+  "notes": [
+    "Paths are repository-relative restore targets.",
+    "release_name is the ASCII GitHub Release asset filename.",
+    "Every downloaded asset must pass both size and SHA-256 verification.",
+    "The duplicate root-level DOVER_official tree is not part of the runtime release; the frozen runtime uses Video/DOVER_official.",
+    "Historical ReviewerDemo paths are obsolete; the public offline folder is MERIT-Offline Model."
+  ]
+}

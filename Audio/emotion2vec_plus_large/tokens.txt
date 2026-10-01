@@ -1,0 +1,9 @@
+生气/angry
+厌恶/disgusted
+恐惧/fearful
+开心/happy
+中立/neutral
+其他/other
+难过/sad
+吃惊/surprised
+<unk>

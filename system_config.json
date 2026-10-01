@@ -1,0 +1,120 @@
+{
+  "schema": "eav.system.config.v1",
+  "class_order": [
+    "Neutral",
+    "Sadness",
+    "Anger",
+    "Happiness",
+    "Calmness"
+  ],
+  "window_seconds": 5.0,
+  "modules": {
+    "eeg_emotion": {
+      "script": "EEG/EEG头部署模块.py",
+      "kwargs": {
+        "device": "cuda",
+        "checkpoint": "EEG/EEG头.pt",
+        "normalization": "EEG/train_channel_normalization.json"
+      },
+      "sha256": "2e897593422da62301cd6abb2f3271ec7ea69936d559e053f309c673449f7e90"
+    },
+    "eeg_quality": {
+      "script": "EEG/EEG质量检测模块（PyPREP）.py",
+      "kwargs": {
+        "candidate": "pyprep_physical",
+        "calibration": "EEG/eeg_quality_calibration.json"
+      },
+      "sha256": "48f439b9931bcba2b1b7b18c99be53c66da3f3b2386d671748fb781fbe2e9971"
+    },
+    "audio_emotion": {
+      "script": "Audio/Audio头部署模块.py",
+      "kwargs": {
+        "device": "cuda",
+        "head_checkpoint": "Audio/Audio头.pt",
+        "model_dir": "Audio/emotion2vec_plus_large"
+      },
+      "sha256": "c467c40d1679beb5471531b6cbb05d88c601404880988d85cf8e56d1deb995c4"
+    },
+    "audio_quality": {
+      "script": "Audio/Audio头质量检测模块（DNSMOS）.py",
+      "kwargs": {
+        "candidate": "ovrl_level_cap",
+        "model_path": "Audio/sig_bak_ovr.onnx",
+        "calibration": "Audio/audio_quality_calibration.json"
+      },
+      "sha256": "cc2577f3e07c18031baa3e9c1e442db0a38170676fb4d940ba7549f110296389"
+    },
+    "video_emotion": {
+      "script": "Video/VIDEO头部署脚本.py",
+      "kwargs": {
+        "dfew_checkpoint": "Video/DFEW-set1-model.pth",
+        "head_checkpoint": "Video/VIDEO头.pt",
+        "yunet_model": "./Video/face_detection_yunet_2023mar.onnx",
+        "device": "cuda",
+        "strict": true
+      },
+      "sha256": "be76b6ea711230391fb7d527e6bf5f5efc3ed8dfded4fd4c6c0e8d1e5e42faed"
+    },
+    "video_quality": {
+      "script": "Video/VIDEO头质量检测模块（DOVER）.py",
+      "kwargs": {
+        "project_root": ".",
+        "dover_repo": "./Video/DOVER_official",
+        "dover_config": "./Video/DOVER_official/dover.yml",
+        "dover_checkpoint": "./Video/DOVER_official/pretrained_weights/DOVER.pth",
+        "calibrator": "./Video/video_quality_calibrator.joblib",
+        "yunet_model": "./Video/face_detection_yunet_2023mar.onnx",
+        "device": "cuda",
+        "strict": true
+      },
+      "sha256": "3ff4d0f32289f5ed30a082e630bc123b8efa373a5ef250c2adee414cc7ab0746"
+    },
+    "fusion": {
+      "script": "./Fusion/融合层部署模块.py",
+      "kwargs": {
+        "assets_dir": "./Fusion",
+        "device": "cpu"
+      },
+      "sha256": "fcdf5e3bdc3b1a09fa775e9065781f5f313a5da18b05ef07fcff2808b063a323"
+    }
+  },
+  "eeg": {
+    "training_unit": null,
+    "input_unit": "training_native",
+    "unit_evidence": "USER_SUPPLIED_NOT_INDEPENDENTLY_VERIFIED"
+  },
+  "runtime": {
+    "error_policy": "raise",
+    "serialize_heads": true,
+    "stale_after_sec": 1.0,
+    "alignment_tolerance_sec": 0.1,
+    "future_tolerance_sec": 0.02,
+    "deadline_sec": 0.75,
+    "max_pending": 8,
+    "poll_interval_sec": 0.01,
+    "shutdown_grace_sec": 2.0
+  },
+  "replay": {
+    "manifest": null,
+    "stage0c_dir": null,
+    "video_manifest": null,
+    "audio_manifest": null,
+    "raw_root": null,
+    "project_root": ".",
+    "split": "val",
+    "confirm_legacy_speaking": false,
+    "path_maps": [],
+    "audio_policy": "a0_pcm16",
+    "ffmpeg": "ffmpeg",
+    "ffprobe": "ffprobe"
+  },
+  "live": {
+    "adapter": null,
+    "settings": {},
+    "clock_id": null
+  },
+  "output_root": "./runs",
+  "quality_layer": {
+    "release": "./release/quality_layer_release_candidate.json"
+  }
+}

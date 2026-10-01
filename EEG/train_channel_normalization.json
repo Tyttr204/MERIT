@@ -1,0 +1,190 @@
+{
+  "policy": "channel-wise mean/std computed from TRAIN split only; same frozen statistics applied to Train/Val/Test",
+  "sample_count_per_channel": 12000000,
+  "channels": [
+    {
+      "channel_index_0based": 0,
+      "channel": "FP1",
+      "train_mean": 102.32858439206572,
+      "train_std": 288.98582345123407
+    },
+    {
+      "channel_index_0based": 1,
+      "channel": "FP2",
+      "train_mean": 44.72231967117254,
+      "train_std": 318.058473480567
+    },
+    {
+      "channel_index_0based": 2,
+      "channel": "F7",
+      "train_mean": 34.336718312989724,
+      "train_std": 127.48986596405611
+    },
+    {
+      "channel_index_0based": 3,
+      "channel": "F3",
+      "train_mean": 10.283007895148046,
+      "train_std": 109.94630599069683
+    },
+    {
+      "channel_index_0based": 4,
+      "channel": "FZ",
+      "train_mean": 17.57021603385469,
+      "train_std": 122.34995092599303
+    },
+    {
+      "channel_index_0based": 5,
+      "channel": "F4",
+      "train_mean": -26.769272133455893,
+      "train_std": 115.00743224119049
+    },
+    {
+      "channel_index_0based": 6,
+      "channel": "F8",
+      "train_mean": 4.820224933628742,
+      "train_std": 123.67913142507602
+    },
+    {
+      "channel_index_0based": 7,
+      "channel": "FC5",
+      "train_mean": 49.61174250695734,
+      "train_std": 103.26128344018332
+    },
+    {
+      "channel_index_0based": 8,
+      "channel": "FC1",
+      "train_mean": 28.735241151993435,
+      "train_std": 116.62570621015035
+    },
+    {
+      "channel_index_0based": 9,
+      "channel": "FC2",
+      "train_mean": 0.08872043221041619,
+      "train_std": 113.35514955071862
+    },
+    {
+      "channel_index_0based": 10,
+      "channel": "FC6",
+      "train_mean": -5.714915488952967,
+      "train_std": 108.02577039402536
+    },
+    {
+      "channel_index_0based": 11,
+      "channel": "T7",
+      "train_mean": -22.05267474018451,
+      "train_std": 132.78323222530977
+    },
+    {
+      "channel_index_0based": 12,
+      "channel": "C3",
+      "train_mean": 22.25235417575285,
+      "train_std": 112.05421645253296
+    },
+    {
+      "channel_index_0based": 13,
+      "channel": "CZ",
+      "train_mean": 26.9671052278696,
+      "train_std": 112.86761370931666
+    },
+    {
+      "channel_index_0based": 14,
+      "channel": "C4",
+      "train_mean": 2.98927499940427,
+      "train_std": 112.1470617906373
+    },
+    {
+      "channel_index_0based": 15,
+      "channel": "T8",
+      "train_mean": -4.638744187408728,
+      "train_std": 122.45460882865888
+    },
+    {
+      "channel_index_0based": 16,
+      "channel": "CP5",
+      "train_mean": 1.136303838323562,
+      "train_std": 106.43241399441057
+    },
+    {
+      "channel_index_0based": 17,
+      "channel": "CP1",
+      "train_mean": 3.2759868838640425,
+      "train_std": 179.90402039150538
+    },
+    {
+      "channel_index_0based": 18,
+      "channel": "CP2",
+      "train_mean": 24.40834428429648,
+      "train_std": 113.49225052018384
+    },
+    {
+      "channel_index_0based": 19,
+      "channel": "CP6",
+      "train_mean": 38.81157365356062,
+      "train_std": 110.43403792606318
+    },
+    {
+      "channel_index_0based": 20,
+      "channel": "P7",
+      "train_mean": 32.544744846476775,
+      "train_std": 105.27127887801183
+    },
+    {
+      "channel_index_0based": 21,
+      "channel": "P3",
+      "train_mean": 22.571803094918188,
+      "train_std": 114.8359132075336
+    },
+    {
+      "channel_index_0based": 22,
+      "channel": "PZ",
+      "train_mean": 34.2393438194501,
+      "train_std": 182.67641797317327
+    },
+    {
+      "channel_index_0based": 23,
+      "channel": "P4",
+      "train_mean": -7.866689688211624,
+      "train_std": 112.99528582613074
+    },
+    {
+      "channel_index_0based": 24,
+      "channel": "P8",
+      "train_mean": 39.40327048758687,
+      "train_std": 119.30562080282269
+    },
+    {
+      "channel_index_0based": 25,
+      "channel": "PO9",
+      "train_mean": 8.67530963156362,
+      "train_std": 114.2556296455696
+    },
+    {
+      "channel_index_0based": 26,
+      "channel": "O1",
+      "train_mean": -1.6283530307686578,
+      "train_std": 108.92518369857233
+    },
+    {
+      "channel_index_0based": 27,
+      "channel": "OZ",
+      "train_mean": 3.0244313344338662,
+      "train_std": 113.28326612798374
+    },
+    {
+      "channel_index_0based": 28,
+      "channel": "O2",
+      "train_mean": 26.897917476473992,
+      "train_std": 182.13482483308
+    },
+    {
+      "channel_index_0based": 29,
+      "channel": "PO10",
+      "train_mean": 29.126579837731487,
+      "train_std": 114.66920190147711
+    }
+  ],
+  "mean_abs_train_channel_mean": 22.58305893969031,
+  "mean_train_channel_std": 133.92356572689548,
+  "min_train_channel_std": 103.26128344018332,
+  "max_train_channel_std": 318.058473480567
+}

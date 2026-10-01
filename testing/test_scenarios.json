@@ -1,0 +1,19 @@
+{
+  "families": [
+    "audio_attenuation",
+    "audio_white_noise",
+    "video_blur",
+    "video_brightness",
+    "eeg_global_line",
+    "eeg_channel_flatline"
+  ],
+  "notes": [
+    "No thresholds/weights are fitted by this file.",
+    "All supported optional families: eeg_local_broadband, eeg_global_broadband, eeg_global_line, eeg_global_slow_drift, eeg_channel_flatline, eeg_intermittent_hold, audio_attenuation, audio_white_noise, audio_pink_noise, video_blur, video_brightness, video_occlusion, video_compression",
+    "Doses are fixed in the runner and exported in the plan."
+  ],
+  "schema": "eav.system_test.scenarios.v1",
+  "seed": 20260919,
+  "selection": "balanced",
+  "trials_per_class": 1
+}
